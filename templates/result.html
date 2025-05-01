@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><title>Extraction Result</title></head>
+<body>
+<h2>Extracted Fields</h2>
+<ul>
+      {% if result %}
+        {% for key, value in result.items() %}
+<li><strong>{{ key }}:</strong> {{ value }}</li>
+        {% endfor %}
+      {% else %}
+<li>No data extracted.</li>
+      {% endif %}
+</ul>
+<a href="/">Upload Another</a>
+</body>
+</html>
